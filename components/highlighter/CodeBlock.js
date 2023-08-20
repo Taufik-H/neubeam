@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ReactDOMServer from "react-dom/server";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 import CopyButton from "./CopyButton";
@@ -8,7 +7,7 @@ import PreviewCodeButton from "./PreviewCodeButton";
 
 const CodeBlock = ({ code, language }) => {
   const [showPreview, setShowPreview] = useState(false);
-  const [iframeWidth, setIframeWidth] = useState("100%"); 
+  const [iframeWidth, setIframeWidth] = useState("100%");
 
   useEffect(() => {
     Prism.highlightAll();
@@ -20,13 +19,13 @@ const CodeBlock = ({ code, language }) => {
 
   const handleIframeWidthChange = (size) => {
     const sizes = {
-      xs: "20%", // or you can use pixels like "320px"
+      mobile: "20%", // or you can use pixels like "320px"
       sm: "40%",
       md: "60%",
       lg: "80%",
       full: "100%",
-  };
-  setIframeWidth(sizes[size] || "100%");
+    };
+    setIframeWidth(sizes[size] || "100%");
   };
 
   return (
@@ -37,14 +36,13 @@ const CodeBlock = ({ code, language }) => {
             onToggle={togglePreview}
             isPreviewing={showPreview}
           />
-          <CopyButton code={code}/>
+          <CopyButton code={code} />
         </div>
         <ResponsiveButton onSizeChange={handleIframeWidthChange} />
       </div>
       <div style={{ transition: "width 0.5s ease-in-out", width: iframeWidth }}>
-
         {showPreview ? (
-          <div className="h-[70vh] mt-10 border-2 border-b-4 border-r-4 border-slate-800 rounded-xl overflow-hidden">
+          <div className="h-[70vh] mt-10 border-2 border-b-4 border-r-4 border-slate-800 rounded-xl overflow-hidden ">
             <iframe
               srcDoc={`
               <!doctype html>
@@ -55,7 +53,9 @@ const CodeBlock = ({ code, language }) => {
                 <script src="https://cdn.tailwindcss.com"></script>
               </head>
               <body>
+              <div class="flex justify-center w-full">
               ${code}
+              </div>
               </body>
               </html>
               `}
