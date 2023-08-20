@@ -1,13 +1,14 @@
 "use client";
-import HighlightWrapper from "@/components/highlighter/CodeBlock";
+import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
-import MyComponent from "./MyComponent";
 
 export default function Home() {
   return (
-    <main>
-      {/* <HeroSection id="hero" bgColor="bg-slate-400" /> */}
-      <MyComponent />
+    <main className="w-full">
+      <div className="">
+        <Navbar />
+      </div>
+      <HeroSection id="hero" bgColor="bg-slate-400" />
     </main>
   );
 }
