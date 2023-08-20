@@ -10,7 +10,7 @@ function ResponsiveButton({ onSizeChange }) {
 
   return (
     <div className="flex gap-2">
-      {["xs", "sm", "md", "lg", "full"].map((size) => (
+      {["mobile", "sm", "md", "lg", "full"].map((size) => (
         <div key={size} className="bg-slate-800 w-32 relative h-10 rounded-lg">
           <button
             onClick={() => handleSizeChange(size)}
