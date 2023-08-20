@@ -1,7 +1,11 @@
 import "./globals.css";
-import { Nunito } from "next/font/google";
+import { Unbounded } from "next/font/google";
 
-const nunito = Nunito({ subsets: ["latin"] });
+const unbounded = Unbounded({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin-ext"],
+});
 
 export const metadata = {
   title: "Tailwindbrutalism",
@@ -11,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>{children}</body>
+      <body className={unbounded.className}>{children}</body>
     </html>
   );
 }
