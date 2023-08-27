@@ -3,7 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { BiCoffeeTogo } from "react-icons/bi";
 function Navbar() {
   return (
-    <nav className=" border-b px-10 py-3 border-slate-200 w-full flex justify-between items-center">
+    <nav className="  px-10 py-3  w-full flex justify-between items-center">
       <h1 className="font-semibold">Tailwindbrutalism</h1>
       <div className="flex gap-3">
         <div className=" bg-orange-500 w-32 relative h-8 rounded-full  ">
