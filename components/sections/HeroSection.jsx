@@ -5,7 +5,7 @@ import Image from "next/image";
 function HeroSection(props, { title }) {
   return (
     <section>
-      <div className="flex">
+      <div className="flex items-center justify-between">
         <div className="w-7/12">
           <div className="mt-10 ">
             <div className=" bg-slate-800 w-56 relative h-10 rounded-lg  ">
@@ -55,10 +55,39 @@ function HeroSection(props, { title }) {
             </div>
           </div>
         </div>
-        <div className=""> </div>
+        <div className="">
+          <div className="w-[334px] h-[334px]">
+            <div className="relative">
+              <Image
+                height={84}
+                width={84}
+                alt="tailwindlogo"
+                src={"/assets/flower.svg"}
+                className="absolute -left-10 -top-10"
+              />
+            </div>
+
+            <Image
+              height={1000}
+              width={1000}
+              alt="tailwindlogo"
+              src={"/assets/computer.png"}
+              className="w-80  left-0 top-0"
+            />
+            <div className="relative">
+              <Image
+                height={84}
+                width={84}
+                alt="tailwindlogo"
+                src={"/assets/thunder.svg"}
+                className="absolute -right-6 -top-32"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
 
-export default withContainer(HeroSection, "bg-white", "hero");
+export default withContainer(HeroSection, "", "hero");
