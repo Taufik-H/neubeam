@@ -30,8 +30,8 @@ const CodeBlock = ({ code, language }) => {
 
   return (
     <div className="p-5">
-      <div className="flex justify-between">
-        <div className="flex gap-2">
+      <div className="flex justify-between md:px-10">
+        <div className="flex gap-2 ">
           <PreviewCodeButton
             onToggle={togglePreview}
             isPreviewing={showPreview}
