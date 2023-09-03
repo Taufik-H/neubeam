@@ -7,14 +7,14 @@ import { GoAlert } from "react-icons/go";
 
 export default function Home() {
   const componentsData = [
-    { label: "Alert", count: 4 },
-    { label: "Buttons", count: 4 },
-    { label: "Button Group", count: 4 },
-    { label: "Cards", count: 7 },
-    { label: "Badges", count: 3 },
-    { label: "Footers", count: 6 },
-    { label: "Forms", count: 8 },
-    { label: "Breadcrumbs", count: 2 },
+    { label: "Alert", count: 1 },
+    { label: "Buttons", count: 1 },
+    { label: "Button Group", count: 0 },
+    { label: "Cards", count: 0 },
+    { label: "Badges", count: 0 },
+    { label: "Footers", count: 0 },
+    { label: "Forms", count: 0 },
+    { label: "Breadcrumbs", count: 0 },
   ];
   return (
     <main className="w-full ">
