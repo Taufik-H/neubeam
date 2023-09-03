@@ -6,7 +6,7 @@ import ResponsiveButton from "./ResponsiveButton";
 import PreviewCodeButton from "./PreviewCodeButton";
 import { Suspense } from "react";
 
-const CodeBlock = ({ code, language }) => {
+const CodeBlock = ({ code, language, componentName }) => {
   const [showPreview, setShowPreview] = useState(true);
   const [iframeWidth, setIframeWidth] = useState("100%");
 
@@ -30,8 +30,11 @@ const CodeBlock = ({ code, language }) => {
   };
 
   return (
-    <div className="p-5">
-      <div className="flex justify-between md:px-10">
+    <div className="p-4">
+      <h1 className="text-2xl font-bold mb-4">
+        {componentName ? componentName : "Component Name"}
+      </h1>
+      <div className="flex justify-between ">
         <div className="flex gap-2 ">
           <PreviewCodeButton
             onToggle={togglePreview}
