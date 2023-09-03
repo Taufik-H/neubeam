@@ -1,69 +1,36 @@
-/* Gaya Dasar */
-code[class*="language-"],
 pre[class*="language-"] {
-  color: #f8f8f2;
-  background: #282a36;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  font-size: 1em;
-  line-height: 1.5em;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  tab-size: 4;
-  hyphens: none;
+  @apply !m-0 !rounded-xl !bg-gray-900 !p-4;
+  color: #ffffff;
 }
 
-/* Komentar */
-code[class*="language-"] .token.comment,
-pre[class*="language-"] .token.comment {
-  color: #6272a4;
+.dark pre[class*="language-"] {
+  @apply !m-0 !rounded-xl !bg-gray-800 !p-4;
 }
 
-/* Built-ins, Keywords */
-code[class*="language-"] .token.builtin,
-pre[class*="language-"] .token.builtin,
-code[class*="language-"] .token.keyword,
-pre[class*="language-"] .token.keyword {
-  color: #8be9fd;
+.token:is(.property, .tag, .constant, .symbol, .deleted) {
+  @apply !text-red-400;
 }
 
-/* Strings and regex */
-code[class*="language-"] .token.string,
-pre[class*="language-"] .token.string,
-code[class*="language-"] .token.regex,
-pre[class*="language-"] .token.regex {
-  color: #f1fa8c;
+.token:is(.selector, .attr-name, .string, .char, .builtin, .inserted) {
+  @apply !text-yellow-400;
 }
 
-/* Functions, classes, etc. */
-code[class*="language-"] .token.function,
-pre[class*="language-"] .token.function,
-code[class*="language-"] .token.class-name,
-pre[class*="language-"] .token.class-name {
-  color: #ff79c6;
+.token:is(.atrule, .attr-value, .function, .class-name) {
+  @apply !text-green-400;
 }
 
-/* Variables, symbols, etc. */
-code[class*="language-"] .token.variable,
-pre[class*="language-"] .token.variable,
-code[class*="language-"] .token.constant,
-pre[class*="language-"] .token.constant {
-  color: #bd93f9;
+.token:is(.comment, .prolog, .doctype, .cdata) {
+  @apply !text-gray-400;
 }
 
-/* Numbers */
-code[class*="language-"] .token.number,
-pre[class*="language-"] .token.number {
-  color: #ffb86c;
+.token:is(.operator, .entity, .url, .variable) {
+  @apply !text-white;
 }
 
-/* Punctuation */
-code[class*="language-"] .token.punctuation,
-pre[class*="language-"] .token.punctuation {
-  color: #f8f8f2;
+.token:is(.boolean, .number) {
+  @apply !text-purple-400;
 }
 
-/* And more... */
-/* Anda bisa terus menambah gaya sesuai kebutuhan untuk menyesuaikan dengan tema Dracula sepenuhnya. */
+.token.keyword {
+  @apply !text-cyan-400;
+}
