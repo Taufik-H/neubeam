@@ -8,7 +8,7 @@ const unbounded = Unbounded({
 });
 
 export const metadata = {
-  title: "Tailwindbrutalism",
+  title: "NeuBeam",
   description: "OpenSource components neubrutalism for TailwindCss",
 };
 

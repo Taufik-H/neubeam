@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/sections/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import Image from "next/image";
-import { GoAlert } from "react-icons/go";
 
 export default function Home() {
   const componentsData = [
@@ -17,8 +16,8 @@ export default function Home() {
     { label: "Breadcrumbs", count: 0 },
   ];
   return (
-    <main className="w-full ">
-      <div className="absolute h-screen w-screen -z-10 overflow-hidden">
+    <main className="">
+      <div className="absolute h-screen w-full  -z-10 overflow-hidden">
         <Image
           height={564}
           width={1500}
@@ -28,16 +27,13 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
       </div>
-
       <Navbar />
-
       <HeroSection id="hero" bgColor="" />
-
       <div className="px-5 mt-10 font-bold text-xs text-center uppercase">
         Components
       </div>
 
-      <section className="my-10 px-5 ">
+      <section className="my-10 px-5  ">
         <div className="flex flex-wrap gap-3 justify-center">
           {componentsData.map(({ label, count, icons }) => {
             const Icon = icons;
