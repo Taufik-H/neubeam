@@ -1,5 +1,6 @@
 "use client";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/sections/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import Image from "next/image";
 
@@ -14,7 +15,7 @@ export default function Home() {
     { label: "Breadcrumbs", count: 2 },
   ];
   return (
-    <main className="w-full">
+    <main className="w-full ">
       <div className="absolute h-screen w-screen -z-10 overflow-hidden">
         <Image
           height={564}
@@ -53,6 +54,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
