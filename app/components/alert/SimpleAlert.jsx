@@ -5,10 +5,14 @@ import ReactDOMServer from "react-dom/server";
 import beautify from "html";
 const SimpleAlert = () => {
   const rawCode = ReactDOMServer.renderToString(<UiSimpleAlert />);
-  const myCodeString = beautify.prettyPrint(rawCode, { indent_size: 2 });
+  const codeString = beautify.prettyPrint(rawCode, { indent_size: 2 });
   return (
     <div>
-      <CodeBlock code={myCodeString} language="html" />
+      <CodeBlock
+        code={codeString}
+        language="html"
+        componentName={"Simple Alert"}
+      />
     </div>
   );
 };
