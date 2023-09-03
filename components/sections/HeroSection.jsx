@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function HeroSection(props, { title }) {
   return (
-    <section className="flex flex-col justify-center items-center w-full">
+    <section className="flex flex-col justify-center items-center w-full ">
       <div className="my-5">
         <div className="bg-slate-700 w-44 h-10  relative border rounded-md border-slate-900 ">
           <p className="flex text-xs justify-center items-center rounded-md bg-white absolute h-10 w-44 px-2 -top-2 right-1 border-2 border-slate-900">
