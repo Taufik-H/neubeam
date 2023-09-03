@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Prism from "prismjs";
-import "prismjs/themes/prism-tomorrow.css";
+// import "prismjs/themes/prism-tomorrow.css";
+import "@/app/customprism.css";
 import CopyButton from "./CopyButton";
 import ResponsiveButton from "./ResponsiveButton";
 import PreviewCodeButton from "./PreviewCodeButton";
