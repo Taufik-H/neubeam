@@ -23,7 +23,7 @@ const CodeBlock = ({ code, language, componentName }) => {
     const sizes = {
       mobile: "320px",
       sm: "640px",
-      md: "	768px",
+      md: "768px",
       lg: "1024px",
       full: "100%",
     };
@@ -51,31 +51,38 @@ const CodeBlock = ({ code, language, componentName }) => {
             <Suspense fallback={<div>Loading Component...</div>}>
               <iframe
                 srcDoc={`
-              <!doctype html>
-              <html>
-              <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <script src="https://cdn.tailwindcss.com"></script>
-              </head>
-              <body>
-              <div class="flex justify-center w-full ">
-              ${code}
-              </div>
-              </body>
-              </html>
-              `}
+                  <!doctype html>
+                  <html>
+                  <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <script src="https://cdn.tailwindcss.com"></script>
+                  </head>
+                  <body>
+                  <div class="flex justify-center w-full ">
+                  ${code}
+                  </div>
+                  <script>
+                  document.body.addEventListener('click', function(e) {
+                    if(e.target.tagName === 'A') {
+                      e.preventDefault();
+                    }
+                  });
+                </script>
+                  </body>
+                  </html>
+                `}
                 title="Component Preview"
                 width="100%"
                 height="100%"
-                className="border-none w-full aspect-video"
+                className="border-none w-full "
               />
             </Suspense>
           </div>
         ) : (
           <div className="mt-10">
             <pre
-              className={`language-${language}  h-[70vh] max-h-[70vh] border-2 border-r-4 border-b-4 border-slate-800 rounded-xl overflow-scroll`}
+              className={`language-${language} h-[70vh] max-h-[70vh] border-2 border-r-4 border-b-4 border-slate-800 rounded-xl overflow-scroll`}
             >
               <code className={`language-${language}`}>{code}</code>
             </pre>
