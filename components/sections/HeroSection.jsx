@@ -1,9 +1,7 @@
 import React from "react";
 import withContainer from "../wrapper/Container";
-import { AiFillGithub, AiFillHeart } from "react-icons/ai";
-import Image from "next/image";
 
-function HeroSection(props, { title }) {
+function HeroSection(props) {
   return (
     <section className="flex flex-col justify-center items-center w-full ">
       <div className="my-5">

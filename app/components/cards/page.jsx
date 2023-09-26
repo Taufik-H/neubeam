@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
 import CodeBlock from "@/components/highlighter/CodeBlock";
-import UiSimpleAlert from "@/ui/alert/UiSimpleAlert";
 import { getComponentCode } from "@/utils/getComponentCode";
 import { Nunito } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { alerts } from "@/constant/componentList";
+import { cards } from "@/constant/componentList";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -32,7 +31,7 @@ const ComponentsPage = () => {
         <Link href={"/"}>Home /</Link>
         <span className="text-slate-900">Components</span>
       </p>
-      {alerts.map((item, index) => (
+      {cards.map((item, index) => (
         <ComponentWithCode key={index} {...item} />
       ))}
     </div>
