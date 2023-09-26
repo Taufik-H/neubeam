@@ -8,7 +8,7 @@ import Link from "next/link";
 import { getComponentsData } from "@/utils/getComponentsData";
 export default function Home() {
   const [componentsData, setComponentsData] = useState([]);
-  console.log(componentsData);
+
   useEffect(() => {
     setComponentsData(getComponentsData());
   }, []);
