@@ -1,6 +1,6 @@
 // componentsList.js
 import UiSimpleAlert from "@/ui/alert/UiSimpleAlert";
-import UiSimpleButton from "@/ui/button/UiSimpleButton";
+import UiSimpleButton from "@/ui/buttons/UiSimpleButton";
 import UiSimpleCard from "@/ui/cards/UiSimpleCard";
 
 export const alerts = [
