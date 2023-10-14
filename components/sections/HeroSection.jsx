@@ -13,8 +13,8 @@ function HeroSection(props) {
       </div>
       <h1 className="text-5xl font-black ">
         Neu
-        <span class="ml-2 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue-500 relative inline-block">
-          <span class="relative text-white">Beam</span>
+        <span className="ml-2 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue-500 relative inline-block">
+          <span className="relative text-white">Beam</span>
         </span>
       </h1>
       <p className="text-center  md:w-9/12 mt-5 text-slate-600  leading-tight">
