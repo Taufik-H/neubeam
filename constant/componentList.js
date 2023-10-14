@@ -53,7 +53,7 @@ export const inputs = [
   },
 ];
 
-export const navbar = [
+export const navbars = [
   {
     component: <SimpleNavbar />,
     name: "Simple Navbar",
