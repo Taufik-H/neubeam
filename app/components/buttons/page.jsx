@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import CodeBlock from "@/components/highlighter/CodeBlock";
-
 import { getComponentCode } from "@/utils/getComponentCode";
 import { Nunito } from "next/font/google";
 import Navbar from "@/components/Navbar";
@@ -22,7 +21,7 @@ const ComponentWithCode = ({ component, name }) => {
   );
 };
 
-const ComponentsPage = () => {
+const Page = () => {
   return (
     <div className={nunito.className}>
       <div className="w-full border-b border-slate-200">
@@ -39,4 +38,4 @@ const ComponentsPage = () => {
   );
 };
 
-export default ComponentsPage;
+export default Page;

@@ -5,7 +5,7 @@ import { getComponentCode } from "@/utils/getComponentCode";
 import { Nunito } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { cards } from "@/constant/componentList";
+import { paginations } from "@/constant/componentList";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -21,7 +21,7 @@ const ComponentWithCode = ({ component, name }) => {
   );
 };
 
-const Page = () => {
+const page = () => {
   return (
     <div className={nunito.className}>
       <div className="w-full border-b border-slate-200">
@@ -31,11 +31,11 @@ const Page = () => {
         <Link href={"/"}>Home /</Link>
         <span className="text-slate-900">Components</span>
       </p>
-      {cards.map((item, index) => (
+      {paginations.map((item, index) => (
         <ComponentWithCode key={index} {...item} />
       ))}
     </div>
   );
 };
 
-export default Page;
+export default page;
