@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* container */
+.max-container {
+  @apply mx-auto max-w-[1440px];
+}
+
+.padding-container {
+  @apply px-6  lg:px-20;
+}
+
+/* flexbox variants */
+.flex-center {
+  @apply flex justify-center;
+}
+.flex-between {
+  @apply flex justify-between;
+}
+.flex-end {
+  @apply flex justify-end;
+}
+.flex-start {
+  @apply flex justify-start;
+}
+
+/* button variants */
+.btn-yellow {
+  @apply bg-yellow-500 text-yellow-500;
+}
+.btn-orange {
+  @apply bg-orange-500 text-orange-500;
+}
+.btn-slate {
+  @apply bg-slate-900 text-slate-900;
+}
+
+/* border variants */
+
+.border-yellow {
+  @apply border-[1px] border-yellow-500;
+}
+.border-orange {
+  @apply border-[1px] border-orange-500;
+}
+.border-slate {
+  @apply border-[1px] border-slate-900;
+}
