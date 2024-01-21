@@ -101,9 +101,15 @@ const ButtonHighliter = ({ ...ButtonHighliter }: ButtonHighliterProps) => {
     );
   }
   return (
-    <>
-      <p>set the button mode first!</p>
-    </>
+    <div className="w-fit rounded-lg border border-orange-400 bg-orange-50 p-3">
+      <p>
+        set the button <span className="font-bold">mode</span> first!
+      </p>
+      <p>
+        <span className="font-bold">mode :</span> "copy", "preview",
+        "responsiveness" first!
+      </p>
+    </div>
   );
 };
 
