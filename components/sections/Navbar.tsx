@@ -1,13 +1,17 @@
 import Link from "next/link";
 import { unbounded } from "@/app/fonts";
 import Button from "./Button";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <nav
       className={`${unbounded.className} max-container padding-container my-5 flex-between`}
     >
-      <Link href={"/"}>NeuBeam</Link>
+      <Link href={"/"} className="flex gap-3 items-center">
+        <Image src={"logonb.svg"} height={20} width={20} alt="logo neubeam" />
+        NeuBeam
+      </Link>
       <div className="flex-center gap-4">
         <Button
           bg="bg-orange-500"
