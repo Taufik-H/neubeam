@@ -15,13 +15,23 @@
     "incremental": true,
     "plugins": [
       {
-        "name": "next"
-      }
+        "name": "next",
+      },
     ],
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": ["./*"],
+    },
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "utils/getComponentCode.jsx",
+    "utils/getComponentCode.jsx",
+    "components/highlighter/highlighter.jsx",
+    "constant/dataComponents.jsx",
+    "constant/componentList.js",
+  ],
+  "exclude": ["node_modules"],
 }

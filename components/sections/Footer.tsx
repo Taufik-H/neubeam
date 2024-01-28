@@ -4,10 +4,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full max-conteiner padding-container absolute bottom-5">
-      <div className="relative w-full bg-slate-900 rounded-lg h-12 ">
-        <div className="absolute flex justify-between w-full border bg-white rounded-lg border-slate-900 p-3 -top-2 -left-1">
-          <p>NeuBeam</p>
+    <footer className="max-conteiner padding-container my-5 w-full">
+      <div className="relative h-12 w-full rounded-lg bg-slate-900 ">
+        <div className="absolute -left-1 -top-2 flex w-full justify-between rounded-lg border border-slate-900 bg-white p-3">
+          <p className="font-semibold">NeuBeam</p>
           <ul className="flex gap-5">
             <li className="underline">
               <Link href={"#"}>contribute</Link>
@@ -20,7 +20,13 @@ const Footer = () => {
             href="https://github.com/Taufik-H"
             className="flex items-center"
           >
-            <Image src={"/github.svg"} height={20} width={20} alt="github" />
+            <Image
+              src={"/github.svg"}
+              height={20}
+              width={20}
+              alt="github"
+              className=""
+            />
             Taufik-H
           </Link>
         </div>

@@ -1,8 +1,9 @@
 "use client";
-
 import React, { Suspense, useEffect, useState } from "react";
 import Prism from "prismjs";
 import ButtonHighliter from "./button-highlighter";
+import "prismjs/components/prism-jsx";
+import "@/app/customprism.css";
 interface HighlighterProps {
   code?: string;
   language?: string;
@@ -13,7 +14,6 @@ type SizeKey = "mobile" | "sm" | "md" | "lg" | "full";
 const Highlighter = ({ code, language, componentName }: HighlighterProps) => {
   const [showPreview, setShowPreview] = useState(true);
   const [iframeWidth, setIframeWidth] = useState("100%");
-
   const togglePreview = () => {
     setShowPreview(!showPreview);
   };
@@ -30,7 +30,7 @@ const Highlighter = ({ code, language, componentName }: HighlighterProps) => {
 
   useEffect(() => {
     Prism.highlightAll();
-  }, [code, language]);
+  }, [code, language, showPreview]);
 
   return (
     <div>
@@ -41,6 +41,7 @@ const Highlighter = ({ code, language, componentName }: HighlighterProps) => {
         <div className="flex justify-between ">
           <div className="flex gap-2 ">
             <ButtonHighliter
+              mode="preview"
               onToggle={togglePreview}
               isPreviewing={showPreview}
             />
@@ -58,7 +59,7 @@ const Highlighter = ({ code, language, componentName }: HighlighterProps) => {
             <div className="mt-10 h-[70vh] overflow-hidden rounded-xl border-2 border-b-4 border-r-4 border-slate-800 ">
               <Suspense fallback={<div>Loading Component...</div>}>
                 <iframe
-                  key={code}
+                  key={code?.toString()}
                   srcDoc={`
                   <!doctype html>
                   <html>
@@ -93,7 +94,7 @@ const Highlighter = ({ code, language, componentName }: HighlighterProps) => {
               <pre
                 className={`language-${language} h-[70vh] max-h-[70vh] overflow-scroll rounded-xl border-2 border-b-4 border-r-4 border-slate-800`}
               >
-                <code className={`language-${language}`}>{code}</code>
+                <code className={`language-${language}`}>{`${code}`}</code>
               </pre>
             </div>
           )}

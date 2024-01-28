@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 type SizeKey = "mobile" | "sm" | "md" | "lg" | "full";
@@ -17,7 +19,7 @@ const ButtonHighliter = (props: ButtonHighliterProps) => {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText("ayay");
+      await navigator.clipboard.writeText(props.code?.toString() || "");
       setIsCopy(true);
       setTimeout(() => setIsCopy(false), 2000);
     } catch (err) {
