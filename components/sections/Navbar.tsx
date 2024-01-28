@@ -6,9 +6,9 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <nav
-      className={`${unbounded.className} max-container padding-container my-5 flex-between`}
+      className={`${unbounded.className} max-container padding-container flex-between my-5`}
     >
-      <Link href={"/"} className="flex gap-3 items-center">
+      <Link href={"/"} className="flex items-center gap-3">
         <Image src={"logonb.svg"} height={20} width={20} alt="logo neubeam" />
         NeuBeam
       </Link>
@@ -23,7 +23,7 @@ const Navbar = () => {
           href="/"
           icon="/cofe.svg"
           rounded="rounded-full"
-          width="w-32"
+          width="w-12 md:w-32"
           iconSize={12}
         />
         <Button
@@ -37,7 +37,7 @@ const Navbar = () => {
           icon="/github.svg"
           iconSize={20}
           rounded="rounded-full"
-          width="w-32"
+          width="w-12 md:w-32"
         />
       </div>
     </nav>

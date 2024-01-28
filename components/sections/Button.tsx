@@ -71,16 +71,16 @@ const Button = ({
       <div className={`relative w-full ${bg} ${height} ${rounded}`}>
         <Link
           href={`${href}`}
-          className={`absolute flex gap-3 p-2 items-center  justify-center w-full h-full ${rounded} -top-1 -left-1 border ${borderColor} ${textColor}  bg-white ${
+          className={`absolute flex h-full w-full items-center  justify-center gap-3 p-2 ${rounded} -left-1 -top-1 border ${borderColor} ${textColor}  bg-white ${
             hover
-              ? "hover:-top-0 hover:-left-0 transition-all ease-in-out duration-200"
+              ? "transition-all duration-200 ease-in-out hover:-left-0 hover:-top-0"
               : ""
           }`}
         >
           {icon && (
             <Image src={icon} height={iconSize} width={iconSize} alt={label} />
           )}
-          {label}
+          <div className="hidden md:block">{label}</div>
         </Link>
       </div>
     </div>
