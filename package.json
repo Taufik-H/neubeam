@@ -9,26 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@liquify/prettify": "^0.5.5-beta.1",
-    "beautify": "^0.0.8",
     "html": "^1.0.0",
-    "html-prettify": "^1.0.7",
-    "js-beautify": "^1.14.11",
     "next": "14.0.3",
     "prismjs": "^1.29.0",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/beautify": "^0.0.3",
-    "@types/js-beautify": "^1.14.3",
+    "@types/html": "^1.0.4",
     "@types/node": "^20",
     "@types/prismjs": "^1.26.3",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
-    "prettier": "^3.2.4",
+    "prettier": "3.2.4",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
