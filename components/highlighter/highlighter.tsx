@@ -46,6 +46,7 @@ const Highlighter = ({ code, language, componentName }: HighlighterProps) => {
               isPreviewing={showPreview}
             />
             <ButtonHighliter mode="copy" code={code} />
+            <ButtonHighliter mode="convert" code={code} />
           </div>
           <ButtonHighliter
             mode="responsiveness"

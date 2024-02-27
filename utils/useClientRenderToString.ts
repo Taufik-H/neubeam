@@ -1,5 +1,3 @@
-// useClientRenderToString.ts
-
 import { useEffect, useState } from "react";
 import { clientRenderToString } from "./clientRenderToString";
 
@@ -18,6 +16,7 @@ export const useClientRenderToString: UseClientRenderToString = (
   useEffect(() => {
     (async () => {
       const markupPromises = elementList.map(clientRenderToString);
+
       const markup: string[] = await Promise.all(markupPromises);
 
       if (!setHtmlStringList) {

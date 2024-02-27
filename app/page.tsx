@@ -1,6 +1,6 @@
 import { Hero } from "@/components/sections";
 import Card from "@/components/sections/Card";
-import components from "@/constant/dataComponents";
+import components from "@/constant/components";
 import Link from "next/link";
 
 export default function Home() {

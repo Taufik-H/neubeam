@@ -1,20 +1,27 @@
-"use client";
-
 import React, { useState } from "react";
 
 type SizeKey = "mobile" | "sm" | "md" | "lg" | "full";
 
 interface ButtonHighliterProps {
-  mode?: "copy" | "preview" | "responsiveness";
+  mode?: "copy" | "preview" | "responsiveness" | "convert";
   onToggle?: () => void;
   isPreviewing?: boolean;
   onSizeChange?: (size: SizeKey) => void;
   code?: string;
+  onConvert?: () => void;
 }
 
 const ButtonHighliter = (props: ButtonHighliterProps) => {
-  const { mode, onToggle, isPreviewing = true, onSizeChange } = props;
+  const {
+    mode,
+    onToggle,
+    isPreviewing = true,
+    onSizeChange,
+    code,
+    onConvert,
+  } = props;
   const [isCopy, setIsCopy] = useState(false);
+  const [isConvert, setConvert] = useState(false);
   const [activeSize, setActiveSize] = useState<SizeKey>("full");
 
   const handleCopy = async () => {
@@ -30,6 +37,12 @@ const ButtonHighliter = (props: ButtonHighliterProps) => {
   const handleSizeChange = (size: SizeKey) => {
     setActiveSize(size);
     onSizeChange && onSizeChange(size);
+  };
+
+  const handleConvert = () => {
+    setConvert(!isConvert);
+
+    onConvert && onConvert();
   };
 
   const buttonStyle = (active: boolean) =>
@@ -77,6 +90,17 @@ const ButtonHighliter = (props: ButtonHighliterProps) => {
             </button>
           </div>
         ))}
+      </div>
+    );
+  } else if (mode === "convert") {
+    return (
+      <div className="relative h-10 w-32 rounded-lg bg-slate-800 ">
+        <button
+          onClick={handleConvert}
+          className="w-53 absolute -left-1 -top-1 flex h-full w-full items-center justify-center gap-3 rounded-lg border border-slate-800 bg-white p-2 text-lg font-bold transition-all duration-200 hover:-left-0 hover:-top-0 hover:bg-slate-900 hover:text-white"
+        >
+          {isConvert ? "html" : "JSX"}
+        </button>
       </div>
     );
   }

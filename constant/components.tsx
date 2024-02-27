@@ -1,4 +1,6 @@
 import UISimpleAlert from "@/ui/alert/UiSimpleAlert";
+import AlertWithAction from "@/ui/alert/AlertWithAction";
+import RoundedAlert from "@/ui/alert/rounded-alert";
 
 const components = [
   {
@@ -10,8 +12,12 @@ const components = [
         componentCode: <UISimpleAlert />,
       },
       {
-        name: "simple alert2",
-        componentCode: <UISimpleAlert />,
+        name: "rounded alert",
+        componentCode: <RoundedAlert />,
+      },
+      {
+        name: "alert with action",
+        componentCode: <AlertWithAction />,
       },
     ],
   },
