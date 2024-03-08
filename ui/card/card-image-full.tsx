@@ -17,11 +17,11 @@ function CardImageFull() {
           <p className="my-3 text-justify text-slate-600 ">
             Lorem ipsum, dolor sit amet consectetur adipisicing...
           </p>
-          <a href="#">
+          <button className="w-full">
             <div className="w-full border border-black px-2 py-2 text-center transition-all duration-200 hover:bg-slate-900 hover:text-white">
               Add Cart
             </div>
-          </a>
+          </button>
         </div>
       </div>
     </div>
