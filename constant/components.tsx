@@ -5,6 +5,7 @@ import ButtonGroup from "@/ui/button/button-group";
 import SimpleCard from "@/ui/card/simple-card";
 import Checkbox from "@/ui/button/button-checkbox";
 import ButtonToggle from "@/ui/button/button-toggle";
+import CardImageFull from "@/ui/card/card-image-full";
 
 const components = [
   {
@@ -46,6 +47,10 @@ const components = [
       {
         name: "Simple Card",
         componentCode: <SimpleCard />,
+      },
+      {
+        name: " Full image Card",
+        componentCode: <CardImageFull />,
       },
     ],
   },
