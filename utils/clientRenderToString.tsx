@@ -4,7 +4,7 @@ export const clientRenderToString = (
   element: React.JSX.Element,
 ): Promise<string> =>
   new Promise((resolve) => {
-    const container = document.createElement("p");
+    const container = document.createElement("div");
     const renderCallback = () => {
       resolve(
         container.firstElementChild

@@ -1,5 +1,6 @@
-"use client";
-const AlertWithAction = () => {
+import React from "react";
+
+function SimpleCard() {
   return (
     <section className="mt-10">
       <div className="w-64 border border-b-2 border-r-4 border-black bg-white p-5">
@@ -24,6 +25,6 @@ const AlertWithAction = () => {
       </div>
     </section>
   );
-};
+}
 
-export default AlertWithAction;
+export default SimpleCard;

@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="max-conteiner padding-container my-5 w-full">
+    <footer className="max-conteiner padding-container my-5 w-full ">
       <div className="relative h-12 w-full rounded-lg bg-slate-900 ">
         <div className="absolute -left-1 -top-2 flex w-full justify-between rounded-lg border border-slate-900 bg-white p-3">
           <p className="font-semibold">NeuBeam</p>

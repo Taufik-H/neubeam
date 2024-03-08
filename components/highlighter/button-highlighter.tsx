@@ -58,7 +58,7 @@ const ButtonHighliter = (props: ButtonHighliterProps) => {
         onClick={onToggle}
         className="relative h-10 w-32 rounded-lg  bg-slate-800"
       >
-        <span className="w-53 absolute -left-1 -top-1 flex h-full w-full items-center justify-center gap-3 rounded-lg border border-slate-800 bg-white p-2 text-lg font-bold transition-all duration-200 hover:-left-0 hover:-top-0 hover:bg-slate-900  hover:text-white">
+        <span className="w-53 absolute -left-1 -top-1 flex h-full w-full items-center justify-center gap-3 rounded-lg border border-slate-800 bg-amber-200 p-2 text-lg font-bold transition-all duration-200 hover:-left-0 hover:-top-0 hover:bg-slate-900  hover:text-white">
           {isPreviewing ? "Code" : "View"}
         </span>
       </button>
@@ -68,7 +68,7 @@ const ButtonHighliter = (props: ButtonHighliterProps) => {
       <div className="relative h-10 w-32 rounded-lg bg-slate-800 ">
         <button
           onClick={handleCopy}
-          className="w-53 absolute -left-1 -top-1 flex h-full w-full items-center justify-center gap-3 rounded-lg border border-slate-800 bg-white p-2 text-lg font-bold transition-all duration-200 hover:-left-0 hover:-top-0 hover:bg-slate-900 hover:text-white"
+          className="w-53 absolute -left-1 -top-1 flex h-full w-full items-center justify-center gap-3 rounded-lg border border-slate-800 bg-green-400 p-2 text-lg font-bold transition-all duration-200 hover:-left-0 hover:-top-0 hover:bg-slate-900 hover:text-white"
         >
           {isCopy ? "Copied!" : "Copy"}
         </button>

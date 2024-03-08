@@ -45,7 +45,7 @@ interface ButtonProps {
    * Text color of the Card. Should be a valid Tailwind CSS text color value.
    * For example: "text-white", etc.
    */
-  textColor: string;
+  textColor?: string;
   /**
    * Size of the icon. Should be a number.
    * For example: 12, 16, etc.
