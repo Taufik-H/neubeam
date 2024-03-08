@@ -2,14 +2,14 @@ const UiSimpleAlert = () => {
   return (
     <div className="flex  items-center justify-center py-20">
       <div className="flex  items-start justify-center gap-3 border border-slate-800 bg-slate-50 p-2 shadow-[5px_7px_0px_rgba(0,0,0,1)]   lg:cursor-pointer">
-        <span class="text-green-600">
+        <span className="text-green-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="h-6 w-6"
+            className="h-6 w-6"
           >
             <path
               stroke-linecap="round"
@@ -26,7 +26,7 @@ const UiSimpleAlert = () => {
             viewBox="0 0 24 24"
             stroke-width="3"
             stroke="currentColor"
-            class="h-3 w-3"
+            className="h-3 w-3"
           >
             <path
               stroke-linecap="round"
