@@ -1,11 +1,13 @@
 import UISimpleAlert from "@/ui/alert/UiSimpleAlert";
-import AlertWithAction from "@/ui/alert/AlertWithAction";
+
 import RoundedAlert from "@/ui/alert/rounded-alert";
 import ButtonGroup from "@/ui/button/button-group";
 import SimpleCard from "@/ui/card/simple-card";
-import Checkbox from "@/ui/button/button-checkbox";
+
 import ButtonToggle from "@/ui/button/button-toggle";
 import CardImageFull from "@/ui/card/card-image-full";
+
+import SimpleForm from "@/ui/form/simple-form";
 
 const components = [
   {
@@ -51,6 +53,16 @@ const components = [
       {
         name: " Full image Card",
         componentCode: <CardImageFull />,
+      },
+    ],
+  },
+  {
+    link: "/form",
+    name: "Form",
+    style: [
+      {
+        name: "Simple form",
+        componentCode: <SimpleForm />,
       },
     ],
   },
