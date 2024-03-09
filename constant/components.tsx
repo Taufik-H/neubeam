@@ -8,6 +8,7 @@ import ButtonToggle from "@/ui/button/button-toggle";
 import CardImageFull from "@/ui/card/card-image-full";
 
 import SimpleForm from "@/ui/form/simple-form";
+import FormIcon from "@/ui/form/form-icon";
 
 const components = [
   {
@@ -22,10 +23,6 @@ const components = [
         name: "rounded alert",
         componentCode: <RoundedAlert />,
       },
-      // {
-      //   name: "alert with action",
-      //   componentCode: <AlertWithAction />,
-      // },
     ],
   },
   {
@@ -63,6 +60,10 @@ const components = [
       {
         name: "Simple form",
         componentCode: <SimpleForm />,
+      },
+      {
+        name: "Form with icon",
+        componentCode: <FormIcon />,
       },
     ],
   },
