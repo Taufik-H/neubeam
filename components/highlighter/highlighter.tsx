@@ -74,31 +74,38 @@ const Highlighter = ({ code, language, componentName }: HighlighterProps) => {
                   <iframe
                     key={code?.toString()}
                     srcDoc={`
-                  <!doctype html>
-                  <html>
-                  <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <script src="https://cdn.tailwindcss.com"></script>
-                  </head>
-                  <body>
-                  <div class="flex justify-center w-full ">
-                  ${code}
-                  </div>
-                  <script>
-                  document.body.addEventListener('click', function(e) {
-                    if(e.target.tagName === 'A') {
-                      e.preventDefault();
-                    }
-                  });
-                </script>
-                  </body>
-                  </html>
-                `}
+                          <!doctype html>
+                          <html>
+                          <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <style>
+                           
+                            </style>
+                            <script src="https://cdn.tailwindcss.com"></script>
+                          </head>
+                          <body>
+                            <div class="flex justify-center w-full ">
+                              ${code}
+                            </div>
+                            <script>
+                              document.addEventListener('DOMContentLoaded', function() {
+                                var links = document.querySelectorAll('a');
+                                links.forEach(function(link) {
+                                  link.removeAttribute('href');
+                                  link.addEventListener('click', function(e) {
+                                    e.preventDefault();
+                                  });
+                                });
+                              });
+                            </script>
+                          </body>
+                          </html>
+                        `}
                     title="Component Preview"
                     width="100%"
                     height="100%"
-                    className="w-full border-none "
+                    className="w-full border-none"
                   />
                 )}
               </div>

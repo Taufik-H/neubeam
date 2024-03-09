@@ -1,5 +1,6 @@
 // clientRenderToString.tsx
 import { createRoot } from "react-dom/client";
+
 export const clientRenderToString = (
   element: React.JSX.Element,
 ): Promise<string> =>
