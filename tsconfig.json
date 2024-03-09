@@ -32,6 +32,8 @@
     "components/highlighter/highlighter.jsx",
     "constant/dataComponents.jsx",
     "constant/componentList.js",
+    "utils/htmlToReact.js",
+    "utils/htmlToReact.js",
   ],
   "exclude": ["node_modules"],
 }
