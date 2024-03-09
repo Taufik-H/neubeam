@@ -37,9 +37,9 @@ const Card = ({
     <div className={`${width} ${className}`}>
       <div className={`relative w-full bg-slate-900 ${height} ${rounded}`}>
         <div
-          className={`absolute flex items-center justify-center w-full h-full ${rounded} -top-1 -left-1 border border-slate-900 bg-white ${
+          className={`absolute flex h-full w-full cursor-default items-center justify-center  ${rounded} -left-1 -top-1 border border-slate-900 bg-white ${
             hover
-              ? "hover:-top-0 hover:-left-0 transition-all ease-in-out duration-200"
+              ? "cursor-default transition-all duration-200 ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
               : ""
           }`}
         >
