@@ -1,37 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Neubeam
 
-## Getting Started
+![Neubeam Preview](https://drive.google.com/file/d/1iSGX1GhGXfMrvuu81RkMFrW4gA_SNwjc/view?usp=sharing)
 
-First, run the development server:
+### Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Neubeam is an open-source project components library designed for Tailwind CSS with a Neubrutalism or retro-inspired style. It aims to provide developers with ready-to-use UI components to enhance their web projects with a unique visual aesthetic.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### How to Contribute
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributing to Neubeam is greatly appreciated! Here are some ways you can contribute:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Report Bugs**: If you encounter any bugs or issues while using Neubeam, please open an issue on GitHub.
+2. **Request Features**: If you have any ideas for new features or improvements, feel free to submit them as GitHub issues.
 
-## Learn More
+3. **Submit Pull Requests**: Contributions are welcome! If you have developed a new feature, fixed a bug, or improved existing code, submit a pull request with your changes.
 
-To learn more about Next.js, take a look at the following resources:
+   ![Contribute](https://via.placeholder.com/200x50)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Spread the Word**: Help spread the word about Neubeam by sharing it with your friends and colleagues or by giving it a star on GitHub.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Support Neubeam
 
-## Deploy on Vercel
+If you find Neubeam useful and would like to support its development, consider sponsoring the project on GitHub.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Sponsor](https://via.placeholder.com/200x50)](https://github.com/sponsors/your_username)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# neubeam-recode
+---
+
+Thank you for considering contributing to Neubeam! Your support is greatly appreciated.
